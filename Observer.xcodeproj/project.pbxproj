@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BA4E6D8C2829A0C50005A0B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E6D8B2829A0C50005A0B6 /* main.cpp */; };
+		BA4E6D942829A1210005A0B6 /* command_line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E6D922829A1210005A0B6 /* command_line.cpp */; };
+		BA4E6D972829A16A0005A0B6 /* mouse_tracker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E6D952829A16A0005A0B6 /* mouse_tracker.cpp */; };
+		BA4E6DA1282ADB810005A0B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E6DA0282ADB810005A0B6 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,16 @@
 /* Begin PBXFileReference section */
 		BA4E6D882829A0C50005A0B6 /* Observer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Observer; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA4E6D8B2829A0C50005A0B6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BA4E6D922829A1210005A0B6 /* command_line.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = command_line.cpp; sourceTree = "<group>"; };
+		BA4E6D932829A1210005A0B6 /* command_line.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = command_line.hpp; sourceTree = "<group>"; };
+		BA4E6D952829A16A0005A0B6 /* mouse_tracker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mouse_tracker.cpp; sourceTree = "<group>"; };
+		BA4E6D962829A16A0005A0B6 /* mouse_tracker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mouse_tracker.hpp; sourceTree = "<group>"; };
+		BA4E6D982829A7AC0005A0B6 /* i_notifiable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = i_notifiable.h; sourceTree = "<group>"; };
+		BA4E6D992829A9460005A0B6 /* i_observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = i_observer.h; sourceTree = "<group>"; };
+		BA4E6D9A282AD1EC0005A0B6 /* events.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = events.h; sourceTree = "<group>"; };
+		BA4E6D9C282AD9F50005A0B6 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		BA4E6D9E282ADA580005A0B6 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		BA4E6DA0282ADB810005A0B6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4E6DA1282ADB810005A0B6 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +57,7 @@
 			children = (
 				BA4E6D8A2829A0C50005A0B6 /* Observer */,
 				BA4E6D892829A0C50005A0B6 /* Products */,
+				BA4E6D9B282AD9F50005A0B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +73,25 @@
 			isa = PBXGroup;
 			children = (
 				BA4E6D8B2829A0C50005A0B6 /* main.cpp */,
+				BA4E6D922829A1210005A0B6 /* command_line.cpp */,
+				BA4E6D932829A1210005A0B6 /* command_line.hpp */,
+				BA4E6D952829A16A0005A0B6 /* mouse_tracker.cpp */,
+				BA4E6D962829A16A0005A0B6 /* mouse_tracker.hpp */,
+				BA4E6D982829A7AC0005A0B6 /* i_notifiable.h */,
+				BA4E6D992829A9460005A0B6 /* i_observer.h */,
+				BA4E6D9A282AD1EC0005A0B6 /* events.h */,
 			);
 			path = Observer;
+			sourceTree = "<group>";
+		};
+		BA4E6D9B282AD9F50005A0B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA4E6DA0282ADB810005A0B6 /* CoreGraphics.framework */,
+				BA4E6D9E282ADA580005A0B6 /* ApplicationServices.framework */,
+				BA4E6D9C282AD9F50005A0B6 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA4E6D8C2829A0C50005A0B6 /* main.cpp in Sources */,
+				BA4E6D972829A16A0005A0B6 /* mouse_tracker.cpp in Sources */,
+				BA4E6D942829A1210005A0B6 /* command_line.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
